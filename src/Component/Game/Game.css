@@ -1,0 +1,56 @@
+.Game {
+    font-size: 100px;
+    color: green;
+    text-align: center;
+}
+
+.Game-Die {
+    animation-name: wobble;
+    animation-duration: 1s;
+}
+
+.Game-btn {
+    font-size: 30px;
+    border-radius: 15px;
+    text-transform: capitalize;
+    padding: 15px;
+    color: white;
+    background-color: black;
+}
+
+.Game-btn:hover {
+    background-color: #023618;
+    cursor: pointer;
+}
+
+
+@keyframes wobble {
+    from {
+        transform: translate3d(0, 0, 0)
+    }
+
+    15% {
+        transform: translate3d(25%, 0, 0) rotate3d(0, 0, 1, -5deg)
+    }
+
+    30% {
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)
+    }
+
+    45% {
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
+    }
+
+    60% {
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)
+    }
+
+    75% {
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0)
+    }
+
+}

@@ -1,0 +1,9 @@
+.Die {
+
+    display: flex;
+    justify-content: center;
+}
+
+.Die-icon {
+    margin-left: 20px;
+}
